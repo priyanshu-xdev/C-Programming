@@ -1,0 +1,29 @@
+Write a C program that takes three integers as input: two numbers, start and end, representing a range, and a third number, divisor.
+The program should count how many numbers between start and end (inclusive) are divisible by the divisor.
+
+Example:
+
+Input: start = 1, end = 10, divisor = 3
+Output: 3 (numbers 3, 6, and 9 are divisible by 3)
+
+
+#include <stdio.h>
+int main()
+{
+    int a, b, c, count = 0;
+    printf("Enter Start Number:");
+    scanf("%d", &a);
+    printf("Enter End Number:");
+    scanf("%d", &b);
+    printf("Enter Divisor Number:");
+    scanf("%d", &c);
+    for (int i = a; i <= b; i++)
+    {
+        if (i % c == 0)
+        {
+            count++;
+        }
+    }
+    printf("Total Number=%d", count);
+    return 0;
+}

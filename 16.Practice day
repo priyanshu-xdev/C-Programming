@@ -1,0 +1,34 @@
+Generate the Fibonacci sequence up to n terms.
+
+#include <stdio.h>
+int main()
+{
+    int n, count, a = 0, b = 1, c;
+    printf("Enter a Number:");
+    scanf("%d", &n);
+    for (count = 1; count <= n; count++)
+    {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return 0;
+}
+
+
+Print multiplication tables for a given number.
+
+#include <stdio.h>
+int main()
+{
+    int n, t;
+    printf("Enter a Number:");
+    scanf("%d", &n);
+    for (int i = 1; i <= 10; i++)
+    {
+        t = n * i;
+        printf("%d\n", t);
+    }
+    return 0;
+}

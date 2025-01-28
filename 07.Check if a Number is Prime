@@ -1,0 +1,29 @@
+Write a program to check whether a given number is a prime number. 
+A prime number has only two divisors: 1 and itself. 
+Use a loop to check for divisibility from 2 up to the square root of the number.
+
+
+#include <stdio.h>
+int main()
+{
+    int n, count = 0;
+    printf("Enter a Number");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        if (n % i == 0)
+        {
+            count++;
+        }
+    }
+    if (count == 2)
+    {
+        printf("Prime Number");
+    }
+    else
+    {
+        printf("Not Prime");
+    }
+
+    return 0;
+}

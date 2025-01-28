@@ -1,0 +1,23 @@
+Write a program to calculate the sum of even and odd numbers separately from 1 to N, where N is an input provided by the user.
+
+#include <stdio.h>
+int main()
+{
+    int n, even = 0, odd = 0, count;
+    printf("Enter a Number:");
+    scanf("%d", &n);
+    for (count = 1; count <= n; count++)
+    {
+        if (count % 2 == 0)
+        {
+            even = even + count;
+        }
+        else
+        {
+            odd = odd + count;
+        }
+    }
+    printf("Sum of even numbers :%d\n", even);
+    printf("Sum of odd numbers :%d", odd);
+    return 0;
+}
