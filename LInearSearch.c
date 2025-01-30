@@ -12,17 +12,17 @@ int LinearSearch(int array[], int m, int n)
 }
 int main()
 {
-    int m, n;
+    int a, b;
     printf("Enter Number Of Elements In Array:");
-    scanf("%d", &m);
-    int array[m];
+    scanf("%d", &a);
+    int array[a];
     printf("Enter Elements In Array:");
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < a; i++)
     {
         scanf("%d", &array[i]);
     }
     printf("Enter Element to Search:\n");
-    scanf("%d", &n);
-    printf("Index:%d", LinearSearch(array, m, n));
+    scanf("%d", &b);
+    printf("Index:%d", LinearSearch(array, a, b));
     return 0;
 }
